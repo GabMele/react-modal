@@ -1,0 +1,52 @@
+{
+  "name": "@gabmele/react-modal",
+  "version": "1.0.0",
+  "description": "A React modal component by GabMele (Gabriele Melendugno)",
+  "main": "dist/react-modal-library.cjs.js",
+  "module": "dist/react-modal-library.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-modal-library.esm.js",
+      "require": "./dist/react-modal-library.cjs.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "component",
+    "library",
+    "accessible"
+  ],
+  "author": "GabMele (Gabriele Melendugno)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabMele/react-modal.git"
+  },
+  "homepage": "https://github.com/GabMele/react-modal#readme",
+  "bugs": {
+    "url": "https://github.com/GabMele/react-modal/issues"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "postcss": "^8.5.3",
+    "rollup": "^4.37.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}
