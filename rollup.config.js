@@ -4,7 +4,6 @@ import commonjs from "@rollup/plugin-commonjs";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import babel from "@rollup/plugin-babel";
 import postcss from "rollup-plugin-postcss";
-// import scss from "rollup-plugin-scss"; // Import the SCSS plugin
 
 const require = createRequire(import.meta.url);
 const pkg = require("./package.json");
@@ -13,30 +12,30 @@ export default {
   input: "src/index.js",
   output: [
     {
-      file: pkg.main, // CommonJS build
+      file: "dist/react-modal.cjs.js", // Hardcoded to match package.json
       format: "cjs",
       sourcemap: true,
     },
     {
-      file: pkg.module, // ES Module build
+      file: "dist/react-modal.esm.js", // Hardcoded to match package.json
       format: "esm",
       sourcemap: true,
     },
   ],
   plugins: [
-    peerDepsExternal(), // Automatically mark peer dependencies as external
-    resolve(), // Resolve third-party dependencies
-    commonjs(), // Convert CommonJS modules to ES modules
+    peerDepsExternal(),
+    resolve(),
+    commonjs(),
     postcss({
-      modules: true, 
-      extract: false, 
-      minimize: true, // Minify the CSS
+      modules: true,
+      extract: false,
+      minimize: true,
     }),
     babel({
-      babelHelpers: "bundled", // Use bundled Babel helpers
+      babelHelpers: "bundled",
       presets: ["@babel/preset-env", "@babel/preset-react"],
-      exclude: "node_modules/**", // Exclude node_modules from transpilation
+      exclude: "node_modules/**",
     }),
   ],
-  external: ["react", "react-dom", "prop-types"], // Explicitly list peer dependencies
+  external: ["react", "react-dom"], 
 };

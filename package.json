@@ -1,13 +1,14 @@
 {
   "name": "@gabmele/react-modal",
   "version": "1.0.0",
+  "type": "module",
   "description": "A React modal component by GabMele (Gabriele Melendugno)",
-  "main": "dist/react-modal-library.cjs.js",
-  "module": "dist/react-modal-library.esm.js",
+  "main": "dist/react-modal.cjs.js",
+  "module": "dist/react-modal.esm.js",
   "exports": {
     ".": {
-      "import": "./dist/react-modal-library.esm.js",
-      "require": "./dist/react-modal-library.cjs.js"
+      "import": "./dist/react-modal.esm.js",
+      "require": "./dist/react-modal.cjs.js"
     }
   },
   "files": ["dist"],

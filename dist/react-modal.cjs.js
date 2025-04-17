@@ -71,4 +71,4 @@ var Modal = function Modal(_ref) {
 };
 
 exports.Modal = Modal;
-//# sourceMappingURL=react-modal-library.cjs.js.map
+//# sourceMappingURL=react-modal.cjs.js.map

@@ -69,4 +69,4 @@ var Modal = function Modal(_ref) {
 };
 
 export { Modal };
-//# sourceMappingURL=react-modal-library.esm.js.map
+//# sourceMappingURL=react-modal.esm.js.map
