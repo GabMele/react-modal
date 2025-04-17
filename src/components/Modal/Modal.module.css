@@ -12,6 +12,7 @@
     background: white !important; /* Keep modal light */
     color: #333 !important;      /* Keep text dark */
     border: 1px solid #ccc;     /* Add contrast */
+  }
 }
 
 .modalClose {
