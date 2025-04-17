@@ -1,11 +1,17 @@
 /* Modal.module.css */
 
 .modal {
-  background-color: #fff;
+  background-color: #fff !important;
+  color: #333 !important;
   padding: 0 10px;
   border-radius: 8px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
   position: relative;
+
+  @media (prefers-color-scheme: dark) {
+    background: white !important; /* Keep modal light */
+    color: #333 !important;      /* Keep text dark */
+    border: 1px solid #ccc;     /* Add contrast */
 }
 
 .modalClose {
