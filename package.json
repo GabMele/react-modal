@@ -1,6 +1,6 @@
 {
   "name": "@gabmele/react-modal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "A React modal component by GabMele (Gabriele Melendugno)",
   "main": "dist/react-modal.cjs.js",
